@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pollution Control - About Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f9f6;
+      color: #333;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background: rgb(21, 119, 64);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #FFD700;
+    }
+
+    /* About Us Section */
+    .about-section {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                  url('https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      color: #fff;
+    }
+    .about-section h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .about-section p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .about-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      color: #333;
+      padding: 20px;
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: seagreen;
+    }
+
+   
+    /* Footer */
+    footer {
+      background: rgb(21, 119, 64);;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    footer a {
+      color: #FFD700;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <div class="logo">🌍 Pollution Control</div>
+     
+    <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="Home_Page.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="About_us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact_us.html">Contact Us</a></li>
+        </ul>
+       
+    
+  </nav>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <h1>About Us</h1>
+    <p>
+      At <b>Pollution Control Initiative</b>, we are dedicated to creating a cleaner,
+      healthier, and more sustainable environment for future generations.  
+      Our mission is to reduce air, water, and land pollution through awareness,
+      monitoring, and innovative solutions.
+    </p>
+
+    <div class="about-cards">
+      <div class="card">
+        <h3>🌍 Eco-Friendly Practices</h3>
+        <p>We promote simple lifestyle changes that protect the environment.</p>
+      </div>
+      <div class="card">
+        <h3>⚡ Clean Energy</h3>
+        <p>Encouraging the use of renewable energy sources for a greener future.</p>
+      </div>
+      <div class="card">
+        <h3>♻ Recycling</h3>
+        <p>Spreading awareness on reducing waste and recycling effectively.</p>
+      </div>
+      <div class="card">
+        <h3>🌱 Awareness</h3>
+        <p>Educating communities on the harmful effects of pollution.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Pollution Control Initiative | All Rights Reserved</p>
+    <p>
+      <a href="Privacy.php">Privacy Policy</a> | 
+      <a href="Terms.php">Terms of Use</a>
+    </p>
+  </footer>
+
+</body>
+</html>

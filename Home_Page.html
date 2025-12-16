@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pollution Control | Home</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    section {
+            padding: 100px 0;
+        }
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+   
+    h2 { color: black; font-weight: lighter;}
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: white;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .stats-card {
+      border-radius: 15px;
+      transition: transform 0.3s;
+    }
+    .stats-card:hover {
+      transform: translateY(-5px);
+    }
+    .footer {
+      background: rgb(21, 119, 64);
+      color: white;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="Dashboard.html">🌍Pollution Control</a>
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="About_us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact_us.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="inspection.php">Inspection</a></li>
+          <li class="nav-item"><a class="nav-link" href="Monitoring_form.php">Lifestyle Monitoring</a></li>
+        </ul>        
+        <a href="Dashboard.html" class="btn"> Back </a>
+      </div>
+    </div>
+  </nav>
+  
+   <section id="home" class="bg-light">
+        <div class="container">
+            <div id="pollutionCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80" class="d-block w-100" alt="Clean Environment">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Clean Environment</h5>
+                            <p>Let's work together for a pollution-free world.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=900&q=80" class="d-block w-100" alt="Air Pollution">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Air Pollution</h5>
+                            <p>Reduce emissions, breathe easy.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=80" class="d-block w-100" alt="Water Pollution">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Water Pollution</h5>
+                            <p>Protect our water sources for future generations.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#pollutionCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#pollutionCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <h1 class="text-center mb-3"><b>Welcome to Pollution Control</b></h1><br/>
+            <p class="text-center">
+                Pollution control is essential for maintaining a healthy environment and ensuring the well-being of all living beings. By reducing emissions, managing waste responsibly, and promoting green practices, we can combat air, water, and soil pollution. Join us in our mission to create a cleaner, greener planet for current and future generations.
+            </p>
+        </div>
+    </section>
+    
+  <section class="hero d-flex justify-content-center align-items-center">
+    <div class="container">
+      <h1>Together for a Cleaner Tomorrow</h1>
+      <p class="lead">Join us in reducing air, water, and land pollution for a healthier planet.</p>
+      <a href="Learn_more.html" class="btn btn-light btn-lg m-2">Learn More</a>
+      <a href="Report_case.html" class="btn btn-warning btn-lg m-2">Report a Case</a>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-3">
+          <div class="card stats-card shadow p-3">
+            <h3> 85</h3>
+            <p>AQI Today</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card stats-card shadow p-3">
+            <h3> 120+</h3>
+            <p>Water Bodies Cleaned</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card stats-card shadow p-3">
+            <h3> 5,000+</h3>
+            <p>Trees Planted</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card stats-card shadow p-3">
+            <h3> 250+</h3>
+            <p>Industries Monitored</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Our Initiatives</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <h4> Air Control</h4>
+          <p>Monitoring AQI & reducing emissions.</p>
+        </div>
+        <div class="col-md-3">
+          <h4> Water Control</h4>
+          <p>River cleaning & treatment plants.</p>
+        </div>
+        <div class="col-md-3">
+          <h4> Waste Management</h4>
+          <p>Reducing plastic & recycling campaigns.</p>
+        </div>
+        <div class="col-md-3">
+          <h4> Awareness</h4>
+          <p>Workshops & community programs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="py-5">
+    <div class="container text-center">
+      <h2>Get Involved</h2>
+      <p>Be part of the movement for a pollution-free world.</p>
+      <a href="volunteer.html" class="btn btn-success m-2">Volunteer</a>
+      <a href="Donate.html" class="btn btn-primary m-2">Donate Now</a>
+      <a href="Join_Programs.html" class="btn btn-warning m-2">Join Programs</a>
+    </div>
+  </section>
+
+
+  <footer class="footer text-center">
+    <div class="container">
+      <p> 2025 Pollution Control | All Rights Reserved</p>
+      <div>
+        <a href="#" class="text-white m-2">Facebook</a>
+        <a href="#" class="text-white m-2">Twitter</a>
+        <a href="#" class="text-white m-2">Instagram</a>
+      </div>
+    </div>
+  </footer> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

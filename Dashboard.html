@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial scale 1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+	<title>Pollution Control - Dashboard</title>
+	<style>
+		body{
+      background:url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1600&q=80');
+		         border-radius:5px;
+            color:rgb(21, 119, 64);
+            background-color: #e5e7eb; 
+            text-align: center;
+            margin-top: 50px;
+            margin:0;
+            font-family: Arial, sans-serif;
+            display:flex;
+		}
+
+	h2 {
+            text-align: center;
+            color: floralwhite;  ;
+        }
+
+    header {
+      background:rgb(21, 119, 64);
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .menu-btn {
+      color: white;           /* Text color */
+      background-color: yellowgreen; /* Button background */
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .menu-btn:hover {
+      color: yellow; /* Change text color when hovered */
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #006d77;
+    }
+
+    .progress-bar {
+      background: #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 18px;
+    }
+
+    .progress {
+      height: 100%;
+      text-align: right;
+      padding-right: 5px;
+      color: white;
+      line-height: 18px;
+    }
+
+    .low { background: rgb(21, 119, 64); }
+    .moderate { background: #ffb703; }
+    .high { background: #d62828; }
+    canvas {
+      width: 150% !important;
+      height: 350px !important;
+    }
+
+	</style>
+		
+</head>
+<body>
+<header>
+    <h1><b> 🌍POLLUTION CONTROL</b></h1><br/>
+    <p>📊 Real-time Monitoring of Air Quality & Control Measures</p>
+     <div id = "menu-btn" text-align = "center" >
+     <a href="Home_Page.html" class='btn'><b>HOME</b></a>|
+     <a href = "contact.html" class="btn"><b>CONTACT</b></a>
+     <a href = "About.html" class="btn"><b>ABOUT</b></a>| 
+     <a href= "logout.php" class="btn"><b>LOGOUT</b></a>
+     </div>
+  </header>
+
+<section class="dashboard">
+    <div class="card">
+      <h2>Air Quality Index (AQI)</h2>
+      <div class="progress-bar">
+        <div class="progress moderate" style="width: 65%;">165</div>
+      </div>
+      <p>Status: Moderate Pollution</p>
+    </div>
+<div class="card">
+      <h2>PM2.5 Concentration</h2>
+      <div class="progress-bar">
+        <div class="progress high" style="width: 80%;">80 µg/m³</div>
+      </div>
+      <p> High levels, requires control</p>
+    </div>
+<div class="card">
+      <h2>Control Measures</h2>
+      <ul>
+        <li> Increase tree plantation</li>
+        <li> Reduce vehicle emissions</li>
+        <li> Enforce industrial filters</li>
+        <li> Promote clean energy</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Pollutant Trend (Last 7 days)</h2>
+      <canvas id="pollutionChart"></canvas>
+    </div>
+   <div class="card">
+      <h2>Noise Levels</h2>
+      <div class="progress-bar">
+        <div class="progress moderate" style="width: 55%;">55 dB</div>
+      </div>
+      <p>Safe but increasing</p>
+    </div>
+    
+    <div class="card">
+      <h2>Water Pollution Index</h2>
+      <div class="progress-bar">
+        <div class="progress low" style="width: 35%;">35</div>
+      </div>
+      <p>Safe Zone</p>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+  	new Chart(document.getElementById("aqiChart"), {
+      type: 'line',
+      data: {
+        labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        datasets: [{
+          label: 'AQI',
+          data: [90, 110, 100, 130, 120, 140, 150],
+          borderColor: 'blue',
+          fill: false,
+          tension: 0.3
+        }]
+      }
+    });
+
+  </script>  
+   
+
+</body>
+</html>

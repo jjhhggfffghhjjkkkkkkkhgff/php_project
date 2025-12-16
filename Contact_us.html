@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pollution Control - Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f9f6;
+      color: #333;
+    }
+    nav {
+      background: rgb(21, 119, 64);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #FFD700;
+    }
+
+   
+    /* Contact Us Section */
+    .contact-section {
+      padding: 60px 20px;
+      text-align: center;
+      background: #e8f5e9;
+    }
+    .contact-section h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: seagreen;
+    }
+    .contact-section p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .contact-form {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    .contact-form button {
+      background: rgb(21, 119, 64);
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .contact-form button:hover {
+      background: seagreen;
+    }
+
+    /* Footer */
+    footer {
+      background: rgb(21, 119, 64);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    footer a {
+      color: #FFD700;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+   <nav>
+    <div class="logo">🌍 Pollution Control</div>
+    <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="Home_Page.html">Home</a></li>
+          <li class="nav-item" ><a class="nav-link" href="contact_us_view.php">Contact View</a></li>
+          <li class="nav-item" ><a class="nav-link" href="Search_contact_us.php">Search</a></li>
+        </ul>
+        
+   </nav>
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact-section">
+    <h1>Contact Us</h1><br/>
+    <p>🌍 Have questions, suggestions, or want to join us in making a difference?  
+       Fill out the form below and we’ll get back to you soon. 🌍</p>
+    <form class="contact-form" action="Contact_us.php" method="POST">
+      <input type="name" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Pollution Control Initiative | All Rights Reserved</p>
+    <p>
+      <a href="Privacy.php">Privacy Policy</a> | 
+      <a href="Terms.php">Terms of Use</a>
+    </p>
+  </footer>
+
+</body>
+</html>
